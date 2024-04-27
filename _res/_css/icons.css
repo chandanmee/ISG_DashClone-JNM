@@ -1,0 +1,57 @@
+
+
+[class*=" fd-"], [class^=fd-] {
+    display: inline-block;
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 5px; /* Adjust spacing between the image and text */
+}
+
+.fd-dashboard-light:before {
+    content:url("../_icons/dashboard-light.svg");
+}
+
+
+.fd-bar-chart:before{
+    content:url("../_icons/bar-chart-light.svg");
+    
+}
+
+#sidebar-menu .has-arrow .navIcon path {
+    fill: var(--theme-sidebar-dark-menu-item-color); /* Change the fill color here */
+  }
+  #sidebar-menu .mm-active>.has-arrow .navIcon path{
+fill:var(--theme-sidebar-dark-menu-item-active-color) !important;
+
+}
+
+/* #sidebar-menu .has-arrow:after {
+    content:url("../_icons/down-light.svg");
+    display: block;
+    float: right;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+} */
+/* CSS to change the fill color of SVG icons */
+
+#sidebar-menu .has-arrow .navIcon{
+    display: block;
+    float: right;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+#sidebar-menu .appIcon path{
+    fill: var(--theme-sidebar-dark-menu-item-color);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s; 
+}
+
+#sidebar-menu .mm-active .appIcon path{
+fill:var(--theme-sidebar-dark-menu-item-active-color) !important;
+}

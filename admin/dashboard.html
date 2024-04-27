@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="../_res/_img/favicon_light.png">
+  <link rel="stylesheet" href="../_res/_css/style.css" />
+  <link rel="stylesheet" href="../_res/_css/app.css" />
+  <link rel="stylesheet" href="../_res/_css/_responsive.css" />
+  <link rel="stylesheet" href="../_res/_css/icons.css" />
+  <link rel="stylesheet" href="../_res/_css/_extra.css" />
+  <title>Fusiondesk - Admin Dashboard</title>
+</head>
+<!--  vertical-collapsed disabled -->
+<body data-sidebar="dark" class="sidebar-enable">
+  <div class="layout-wrapper">
+
+    <header id="page-topbar">
+      <div class="navbar-header">
+        <div class="d-flex">
+          <!-- LOGO -->
+          <div class="navbar-brand-box">
+
+            <a href="index.html" class="logo logo-dark">
+              <span class="logo-sm">
+                <img src="../_res/_img/isg_dummy_logo.png" alt="logo-sm-dark" height="34">
+              </span>
+              <span class="logo-lg">
+                <img src="../_res/_img/logo.png" alt="logo-dark" height="32">
+              </span>
+            </a>
+
+
+            <a href="index.html" class="logo logo-light">
+              <span class="logo-sm">
+                <img src="../_res/_img/favicon_light.png" alt="logo-sm-light" height="28">
+              </span>
+              <span class="logo-lg">
+                <img src="../_res/_img/isg_dummy_logo_light.png" alt="logo-light" height="32">
+              </span>
+            </a>
+          </div>
+
+          <button type="button" class="btn btn-sm header-item wave-effect font-size-24 " id="vertical-menu-btn">
+            <img src="../_res/_icons/menu.svg" alt="vertical-menu-btn" width="24" height="24">
+          </button>
+
+          <form class="app-search d-none d-lg-block">
+            <div class="position-relative">
+              <input type="text" class="form-control" placeholder="Search...">
+
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path
+                  d="M443.5,420.2L336.7,312.4c20.9-26.2,33.5-59.4,33.5-95.5c0-84.5-68.5-153-153.1-153S64,132.5,64,217s68.5,153,153.1,153
+                c36.6,0,70.1-12.8,96.5-34.2l106.1,107.1c3.2,3.4,7.6,5.1,11.9,5.1c4.1,0,8.2-1.5,11.3-4.5C449.5,437.2,449.7,426.8,443.5,420.2z
+                 M217.1,337.1c-32.1,0-62.3-12.5-85-35.2c-22.7-22.7-35.2-52.9-35.2-84.9c0-32.1,12.5-62.3,35.2-84.9c22.7-22.7,52.9-35.2,85-35.2
+                c32.1,0,62.3,12.5,85,35.2c22.7,22.7,35.2,52.9,35.2,84.9c0,32.1-12.5,62.3-35.2,84.9C279.4,324.6,249.2,337.1,217.1,337.1z">
+                </path>
+              </svg>
+
+            </div>
+          </form>
+        </div>
+        <div class="d-flex">
+          <div class="dropdown d-inline-block user-dropdown">
+            <button id="dropdown-event-2" type="button" class="btn header-item waves-effect show" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="rounded-circle header-profile-user" src="../_res/_img/user/avatar-2.jpg" alt="Header Avatar">
+                <span class="d-xl-inline-block ms-1">Chandan</span>
+                <span class="ico-down-arrow navIcon"></span>
+            </button>
+            <div class="dropdown-menu d-none dropdown-menu-end show" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 72px);" data-popper-placement="bottom-end">
+                <!-- item-->
+                <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
+                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
+                <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+    <div class="vertical-menu mm-active">
+      <div data-simplebar class="h-100 mm-show">
+        <div class="simplebar-wrapper" style="margin: 0px;">
+          <div class="simplebar-height-auto-observer-wrapper">
+            <div class="simplebar-height-auto-observer"></div>
+          </div>  
+          <div class="simplebar-mask">
+            <div class="simplebar-offset" style="right: -17px; bottom: 0px;">
+              <div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden;">
+                <div class="simplebar-content" style="padding: 0px;">
+
+                  <!--- Sidemenu -->
+                  <a class="sidebar-nav-icons"  onclick="scrollAbove()" href="#"><img src="../_res/_icons/up-light.svg" class="" alt="sidebar-top"></a>
+
+                  <div id="sidebar-menu" class="mm-active">
+
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled mm-show">
+
+                      <li class="menu-title">Menu</li>
+                      <li  class="nav-list-item mm-active">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-success float-end">3</span>
+                          <i class="ico-dashboard-light appIcon"></i>
+                          <span class="side-nav-link">Dashboard</span>
+                        </a>
+                      </li>
+
+
+
+                      <li class="nav-list-item">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-success float-end">3</span>
+                          <i class="ico-dashboard-light appIcon"></i>
+                          <span class="side-nav-link">Dashboard</span>
+                        </a>
+                      </li>
+
+
+                      <li class="nav-list-item">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-success float-end">3</span>
+                          <i class="ico-dashboard-light appIcon"></i>
+                          <span class="side-nav-link">Dashboard</span>
+                        </a>
+                      </li>
+
+
+                      <li class="nav-list-item">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-success float-end">3</span>
+                          <i class="ico-dashboard-light appIcon"></i>
+                          <span class="side-nav-link">Dashboard</span>
+                        </a>
+                      </li>
+
+
+                      <li class="nav-list-item">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-success float-end">3</span>
+                          <i class="ico-dashboard-light appIcon"></i>
+                          <span class="side-nav-link">Dashboard</span>
+                        </a>
+                      </li>
+                      
+                      <li class="nav-list-item">
+                        <a href="calendar.html" class=" waves-effect">
+                          <i class="ico-calender appIcon"></i>
+                          <span class="side-nav-link">Calendar</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-list-item">
+                        <a href="chat.html" class=" waves-effect">
+                          <i class="ico-chat appIcon"></i>
+                          <span class="side-nav-link">Chat</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-list-item">
+                        <a href="chat.html" class=" waves-effect">
+                          <i class="ico-view-kanban appIcon"></i>
+                          <span class="side-nav-link">Task Board</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-list-item">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
+                          <i class="ico-barchart-light appIcon"></i>
+                          <span class="side-nav-link">Charts</span>
+                          <span class="ico-down-arrow navIcon"></span>
+                       
+                        </a>
+                        <ul class="sub-menu mm-collapse" aria-expanded="false" style="">
+                          <li><a href="charts-apex.html" class="active">Apex Charts</a></li>
+                          <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                          <li><a href="charts-flot.html">Flot Charts</a></li>
+                          <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
+                          <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                      </li>
+
+
+                      <li class="nav-list-item">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
+                          <i class="ico-barchart-light appIcon"></i>
+                          <span class="side-nav-link">Analytics</span>
+                          <span class="ico-down-arrow navIcon"></span>
+
+                        </a>
+                        <ul class="sub-menu mm-collapse" aria-expanded="false" style="">
+                          <li><a href="charts-apex.html" class="active">Apex Charts</a></li>
+                          <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                          <li><a href="charts-flot.html">Flot Charts</a></li>
+                          <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
+                          <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                      </li>
+
+                      <!-- <li class="">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect mm-active" aria-expanded="false">
+                            <i class="ri-bar-chart-line"></i>
+                            <span>Charts</span>
+                        </a>
+                        <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                            <li class="mm-active"><a href="charts-apex.html" class="active">Apex Charts</a></li>
+                            <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                            <li><a href="charts-flot.html">Flot Charts</a></li>
+                            <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
+                            <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                    </li> -->
+
+                    </ul>
+
+                    <ul class="metismenu list-unstyled mm-show">
+                      <li class="menu-title">Pages</li>
+                      <li class="nav-list-item">
+                        <a href="dashboard.html" class="waves-effect">
+                          <span class="badge rounded-pill bg-danger float-end">3</span>
+                          <i class="ico-barchart-light appIcon"></i>
+                          <span>UI ELements</span>
+                        </a>
+                      </li>
+
+
+                      <li class="nav-list-item">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
+                          <i class="ico-barchart-light appIcon"></i>
+                          <span class="side-nav-link">Forms</span>
+                          <span class="ico-down-arrow navIcon"></span>
+
+                        </a>
+                        <ul class="sub-menu mm-collapse" aria-expanded="false" style="">
+                          <li><a href="charts-apex.html" class="active">Apex Charts</a></li>
+                          <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                          <li><a href="charts-flot.html">Flot Charts</a></li>
+                          <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
+                          <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                      </li>
+
+
+
+                      <!-- <li class="">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect mm-active" aria-expanded="false">
+                            <i class="ri-bar-chart-line"></i>
+                            <span>Charts</span>
+                        </a>
+                        <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                            <li class="mm-active"><a href="charts-apex.html" class="active">Apex Charts</a></li>
+                            <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                            <li><a href="charts-flot.html">Flot Charts</a></li>
+                            <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
+                            <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                    </li> -->
+
+                    </ul>
+                  </div>
+                  <a class="sidebar-nav-icons" onclick="scrollBelow()" href="#"><img src="../_res/_icons/down-light.svg " class="" alt="sidebar-down"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="simplebar-placeholder" style="width: auto; height: 920px;"></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="page-content">
+        <div class="container-fluid">
+          <!-- start page title -->
+          <div class="row">
+            <div class="col-12">
+
+              <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                <h4 class="mb-sm-0">Dashboard</h4>
+
+                <div class="page-title-right">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Fusiondesk</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                  </ol>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="flex-1 overflow-hidden">
+                          <p class="text-truncate mb-2">Number of Sales</p>
+                          <h4 class="mb-0">652</h4>
+                        </div>
+                        <div class="text-primary ms-auto">
+                          <span class="ico-barchart appIcon"></span>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="card-body border-top py-3">
+                      <div class="text-truncate">
+                          <span class="badge bg-success-subtle text-success">2.4% </span>
+                          <span class="text-muted ms-2">From previous period</span>
+                      </div>
+                  </div>
+
+
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="flex-1 overflow-hidden">
+                          <p class="text-truncate mb-2">Sales Revenue</p>
+                          <h4 class="mb-0">₹ 8.65 cr</h4>
+                        </div>
+                        <div class="text-primary ms-auto">
+                          <span class="ico-barchart appIcon"></span>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="card-body border-top py-3">
+                      <div class="text-truncate">
+                          <span class="badge bg-success-subtle text-success">27.4% </span>
+                          <span class="text-muted ms-2">From previous period</span>
+                      </div>
+                  </div>
+
+
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="flex-1 overflow-hidden">
+                          <p class="text-truncate mb-2">Total Expense</p>
+                          <h4 class="mb-0">₹ 38.83L</h4>
+                        </div>
+                        <div class="text-primary ms-auto">
+                          <span class="ico-barchart appIcon"></span>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="card-body border-top py-3">
+                      <div class="text-truncate">
+                          <span class="badge bg-danger-subtle text-success">7.4% </span>
+                          <span class="text-muted ms-2">From previous period</span>
+                      </div>
+                  </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="float-end d-none d-md-inline-block">
+                    <div class="btn-group mb-2">
+                        <button type="button" class="btn btn-sm btn-light">Today</button>
+                        <button type="button" class="btn btn-sm btn-light active">Weekly</button>
+                        <button type="button" class="btn btn-sm btn-light">Monthly</button>
+                    </div>
+                </div>
+                  <h4 class="card-title mb-4">Revenue Analytics</h4>
+                  <div id="chart">
+
+                  </div>
+                </div>
+
+                <div class="card-body border-top text-center">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="mt-4 mt-sm-0">
+                          <p class="mb-2 text-muted text-truncate"><i class="mdi mdi-circle text-primary font-size-10 me-1"></i> This Month :</p>
+                          <div class="d-inline-flex">
+                              <h5 class="mb-0 me-2">₹ 14,254</h5>
+                              <div class="text-success">
+                                  <i class="mdi mdi-menu-up font-size-14"> </i>2.1 %
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                      <div class="col-sm-4">
+                          <div class="mt-4 mt-sm-0">
+                              <p class="mb-2 text-muted text-truncate"><i class="mdi mdi-circle text-primary font-size-10 me-1"></i> This Year :</p>
+                              <div class="d-inline-flex">
+                                  <h5 class="mb-0 me-2">₹ 34,254</h5>
+                                  <div class="text-success">
+                                      <i class="mdi mdi-menu-up font-size-14"> </i>2.1 %
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="mt-4 mt-sm-0">
+                              <p class="mb-2 text-muted text-truncate"><i class="mdi mdi-circle text-success font-size-10 me-1"></i> Previous Year :</p>
+                              <div class="d-inline-flex">
+                                  <h5 class="mb-0">₹ 32,695</h5>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="row">
+                <div class="card">
+                  <div class="card-body">
+
+                    <h4 class="card-title mb-4">Sales Analytics</h4>
+                    <div id="chart2">
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+
+                    <h4 class="card-title mb-4">Sales Analytics</h4>
+                    <div id="chart3">
+                      
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- ---------- -->
+
+        </div>
+      </div>
+      <!-- End Page-content -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <script>document.write(new Date().getFullYear())</script> © ISGLabs.
+            </div>
+            <div class="col-sm-6">
+              <div class="text-sm-end d-none d-sm-block">
+                By ISGLabs <i class="mdi mdi-heart text-danger"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="../_res/_js/script.js"></script>
+  <script src="../_res/_js/_icon.js"></script>
+  <script src="../_res/_js/_chart.js"></script>
+</body>
+
+</html>
